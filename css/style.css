@@ -115,6 +115,9 @@ footer *{
     body{
         margin: 0 1%;
     }
+    header h1{
+        font-size: 1.6rem;
+    }
     .inner-table-large table thead th,
     .inner-table-large table tfoot th{
         font-size: 1.6rem;
