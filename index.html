@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure html d'un tableau</title>
+    <!-- icones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header> <h1>
+            <span class="material-icons" aria-hidden="true">
+            trending_up
+            </span>
+                Structure d'un tableau html
+                
+            </h1> 
+    </header>
+
+    <main>
+        <!-- ici on structure le tableau -->
+        <div class="inner-table-large" role="region">
+           <table>  <!-- display table -->
+                <caption>Statistiques &amp; classements des langages plus utilisés en 2021</caption>
+                <!-- partie header -->
+                <thead>
+                    <tr>
+                        <th>
+                            <span class="material-icons" aria-hidden="true">
+                                poll
+                                </span>
+                            classements
+                        </th>
+                        <th>langage</th>
+                        <th>type</th>
+                        <th>score</th>
+                    </tr>
+                </thead>
+                <!-- partie body -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Python</td>
+                        <td>
+                            app web
+                        </td>
+                        <td>
+                            100%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Java</td>
+                        <td>Application &amp; web</td>
+                        <td>95%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>C</td>
+                        <td>Application</td>
+                        <td>94%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>C++</td>
+                        <td>Application</td>
+                        <td>92%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Javascript</td>
+                        <td>app web</td>
+                        <td>88%</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>php</td>
+                        <td>app web</td>
+                        <td>85%</td>
+                    </tr>
+                   
+                    <!-- last language -->
+                    
+                    
+                    <tr>
+                        <td>7</td>
+                        <td>HTML</td>
+                        <td>Web</td>
+                        <td>75%</td>
+                    </tr>
+                   
+                </tbody>
+                <!-- partie footer -->
+                <tfoot>
+                    <tr>
+                        
+                        <th>
+                            <span class="material-icons" aria-hidden="true">
+                                poll
+                                </span>
+                            classements
+                        </th>
+                        <th>langage</th>
+                        <th>type</th>
+                        <th>score</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <aside data-country="france">
+        <!-- image provisoire très utile pour les schémas -->
+        <!-- <img src="https://via.placeholder.com/350X100/ff9900/222222?text=Visit+Blogging" alt="image"> -->
+        <img src="https://via.placeholder.com/350X100/146eb4/fafafafa" alt="image">
+    </aside>
+
+    <footer>
+        <p>&copy; Powered by html -&nbsp; </p>
+        <p><data value=""></data></p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

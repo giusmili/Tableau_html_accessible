@@ -1,0 +1,127 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    font: 1.6rem 'Mohave',sans-serif;
+    margin: 0;
+}
+h1,h2,h3,h4,p, figure,ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: i;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none ;
+    color: #222;
+}
+button, input, select, option{
+    background: none;
+    border: 0;
+}
+/* 
+theme du tableau */
+:root{
+    --color-primary: #FF9900;
+    --color-secondary: #146EB4;
+    --color-font-base: #222;
+    --color-font-default: #fff;
+}
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    font-weight: normal;
+}
+footer p data{
+    display: inline-block;
+    font-size: small;
+}
+
+main .inner-table-large, aside{
+    max-width: 120rem; /* 12 colonne total de la largeur 1200px */
+    margin: 5rem auto 1rem;
+
+}
+.inner-table-large table{
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+}
+aside{
+    text-align: center;
+    
+}
+aside img{
+    display: inline-block;
+}
+main .inner-table-regular{
+    /* valeur */
+    max-width: 80rem;
+}
+main .inner-table-small{
+    /* valeur */
+    max-width: 60rem;
+    
+}
+.inner-table-large table tbody tr td:last-child{
+    text-align: center;
+}
+.inner-table-large table{
+    width: 100%;
+}
+.inner-table-large table thead th .material-icons, 
+.inner-table-large table tfoot th .material-icons{
+    vertical-align: -.4rem;
+}
+.inner-table-large table caption{
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.inner-table-large table, .inner-table-large table th, td{
+    border: solid .1rem var(--color-font-default);
+    line-height: 3.5rem;
+    padding: .5rem;
+    border-collapse: collapse;
+}
+.inner-table-large table td{
+    text-transform: capitalize;
+}
+.inner-table-large table thead th,
+.inner-table-large table tfoot th{
+    background-color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
+.inner-table-large table tbody tr:nth-child(2n + 1){
+    background-color: var(--color-secondary);
+    color: var(--color-font-default);
+}
+.inner-table-large table thead th:first-child{
+    width: 20%;
+}
+
+footer *{
+    text-align: center;
+    font-size: small;
+}
+/* media queris */
+@media screen and (max-width: 60rem){
+    body{
+        margin: 0 1%;
+    }
+    .inner-table-large table thead th,
+    .inner-table-large table tfoot th{
+        font-size: 1.6rem;
+    }
+    .inner-table-large table thead th span,
+    .inner-table-large table tfoot th span{
+        display: none;
+    }
+
+}
