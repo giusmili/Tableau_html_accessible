@@ -21,5 +21,45 @@ document.addEventListener("DOMContentLoaded",()=>{
             document.body.clientWidth < 800 ? el.classList.add("inner-table-small") : el.classList.remove("inner-table-small");
             
     })
+    
+    /* 
+    structured data schema
+    stat : [
+        {
+            "classement" : 1,
+            "langage" : "Python",
+            "Type" : "App web",
+            "Score" : 100%
+        },
+        {
+            "classement" : 2,
+            "langage" : "Java",
+            "Type" : "App web",
+            "Score" : 95%
+            
+        },
+    ]
+    */
+    let stat = [
+        {
+            classement : 1,
+            langage : "Python",
+            Type : "App web",
+            Score : "100%"
+        },
+
+        {
+            classement : 2,
+            langage : "Java",
+            Type : "App web",
+            Score : "95%"
+            
+        }
+    ]
+    /* test table */
+    for( data of stat){
+        console.log("Classement "+data.classement+"\n langage "+data.langage+"\n type "+data.Type+"\n score "+data.Score)
+    }
+    console.table(stat)
         
 })
