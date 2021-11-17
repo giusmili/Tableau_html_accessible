@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         {
             unite : "1 megaoctet",
             abbreviation : "Mo",
-            taille : "10<sup>8</sup>",
+            taille : "10<sup>6</sup>",
             exemple : "3 Mo : Texte d'une édition quotidienne du New York Times"
         },
         {
@@ -107,5 +107,47 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     console.table(stat)
     console.log(typeof stat)
+
+
+    //exemple méthode split
+    let myString = "Hello World. How are you doing?";
+    let splits = myString.split(" ", 5); //3 mot dans une clé valeur séparés par une virgule
+
+    console.table(splits)
+
+    let outputstring = myString.split(" ");
+    console.log(outputstring[4])//séléctionner le 4ème mot
+    
+    //méthode join
+    
+    console.log(splits.join(' / '))// séparateur sur du contenu d'un tableau
+    /*
+    java !=java
+    script
+    object
+    notation
+    class user{
+        constructeur(nom, prenom, ville)
+        getter,
+        setter
+    }
+    App:{
+        logiciel: "Discord",
+        description: "décrire le produit",
+        Date_de_sortie_initiale: "13 mai 2015"
+
+    }
+    */
+   const app = ({
+        logiciel: "Discord",
+        description: "décrire le produit",
+        Date_de_sortie_initiale: "13 mai 2015"
+   })
+   console.log(JSON.stringify(stat))
+   console.table(app)
+
+
+
+
         
 })
